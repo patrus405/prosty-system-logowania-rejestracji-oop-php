@@ -12,7 +12,9 @@
         $qwe->check_login_details($user_nick, $user_password);
 
     } else {
+        
         header("LOCATION: index.php");
+        
     }
 
 
