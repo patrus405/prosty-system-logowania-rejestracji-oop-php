@@ -9,11 +9,6 @@
     $user_email = filter_input(INPUT_POST, 'user_email', FILTER_SANITIZE_SPECIAL_CHARS);
     $user_birthday_date = filter_input(INPUT_POST, 'user_birthday_date', FILTER_SANITIZE_SPECIAL_CHARS);
 
-    // $incorrect_variables = array('OR', 'or', 'AND', 'and', 'DROP', 'drop', 'TABLE', 'table', 'select', 'SELECT');
-    // foreach ($incorrect_variables as $incorrect_variables) {
-    //     if (strstr($nick, $incorrect_variables))echo "<br>błedny nick";
-    // }
-
     if($nick && $user_password1 && $user_password2 && $user_email && $user_birthday_date) {
 
         $qwe = new registartion($connect);
